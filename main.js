@@ -8,8 +8,15 @@
 
 // 1. Create an object called "me" that describes you with your name, city, and job title.
 
-//console.log("Question 1");
-//console.log(yourAnswer);
+  var me = {
+    name: "Jeremy Pike",
+    city: "Denver",
+    job: "Creative Services Manager"
+  };
+
+  console.log(me);
+
+  var me = {name: "Jeremy Pike", city: "Denver", job: "Creative Services Manager"}
 
 // 2. To your "me" object, add a key of "family" with the value being an array of three of your family members.
 // Example of desired output: { name: 'Bob Smith',
@@ -17,7 +24,17 @@
 //                              jobTitle: 'professional wrestler',
 //                               family: ['Joan', 'Kyle', 'Hank'] }
 
+  me.family = ['Tina', 'John', 'Marisa']
+
+  console.log(me)
+
+  var me = {name: "Jeremy Pike", city: "Denver", job: "Creative Services Manager", family: Array[3]}
+
 // 3. Using the "me" object, use two different methods of accessing your city.
+
+  console.log(me.city)
+
+  console.log(me["city"])
 
 // Use the following Object for questions 4-9:
 var invitees = { adults: [{
@@ -56,56 +73,105 @@ var invitees = { adults: [{
 
 // 4. Access Penny's dinner choice (this will be the second item in his dinneChoice array)
 
+  invitees.adults[0].dinnerChoice[1]
+
 // 5. Access Pablo's table number.
+
+  invitees.children[1].table
 
 // 6. Access Lauren's seating specialConsideration.
 
+  invitees.adults[2].specialConsiderations
+
 // 7. Access Billy's dessert choice (this will be the third item in his dinneChoice array)
 
+  invitees.adults[1].dinnerChoice[2]
+
 // 8. Access Ada's allergies.
+
+  invitees.children[2].allergies
 
 // 9. Create a string that reads Lauren's dinner choice in a sentence.
 // Desired result: "Lauren's appetizer is _______. She will be eating ______ for dinner
 // and has selected ________ as her dessert."
 
+  // console.log('Laurens appetized is ' + invitees.adults[2].dinnerChoice[0] + '. She will be eating ' + invitees.adults[2]dinnerChoice[1] + ' for dinner and has selected ' + invitees.adults[2].dinnerChoice[2] + ' for dessert.')
+
 // 10. Create an empty object called "jsWorkshop" using Constructor Notation.
+
+  var jsWorkshop = new Object();
 
 // 11. To your "jsWorkshop" object, assign a key of "classmates" with the value being an array of five your classmates.
 
+  jsWorkshop.classmates = ['Steve', 'Brian', 'Chris', 'Mike', 'Rob'];
+
 // 12. Acesss the third classmate in your "jsWorkshop" object.
+
+  jsWorkshop.classmates[2]
 
 // 13. Get the length of the fourth classmate's name.
 
+  jsWorkshop.classmates[3].length
+
 // 14. Clear the classmates value.
 
+  jsWorkshop.classmates = []
+
 // 15. Create an emtpy array called "books".
+
+  var books = []
+
 // Create three objects that contain book titles, their author, and number of pages.
+
+  var blueBook = {title: "Death of a Bachelor",
+                          author: "Bandon Urie",
+                          pages: 12
+                          };
+
+  var greenBook = {title: "American Beauty",
+                           author: "Patrick Stump",
+                           pages: 14
+                           };
+
+  var purpleBook = {title: "The Black Parade",
+                            author: "Gerard Way",
+                            pages: 17
+                            };          
+
 // Insert the three objects into the "books" array.
+
+    var books = [{blueBook: {title: "Death of a Bachelor",
+                          author: "Bandon Urie",
+                          pages: 12
+                          },
+                greenBook: {title: "American Beauty",
+                           author: "Patrick Stump",
+                           pages: 14
+                           },
+                purpleBook: {title: "The Black Parade",
+                            author: "Gerard Way",
+                            pages: 17
+                            },           
+  }]
+
 // (Feel free to make up the titles. And the authors. Have fun. No pressure.)
 // Example of desired array: [ youHadMeAtWoof, bangkokHaunts, theCatcherInTheRye]
 // Example of desired object: {title: "You Had Me at Woof", author: "Julie Klum", pages: 207}
-// Final desired result:
-    var books = [{youHadMeAtWoof: {title: "You Had Me at Woof",
-                                  author: "Julie Klum",
-                                  pages: 207
-                                  },
-                   theCatcherInTheRye: {
-                                  title: "The Catcher in the Rye",
-                                  author: "JD Salinger",
-                                  pages: 214
-                                  },
-                   bangkokHaunts: {
-                                  title: "Bangkok Haunts",
-                                  author: "John Burdett",
-                                  pages: 569,
-                                  }
-                }]
+
 // 15a. Access the author of the first book.
+
+  blueBook.author
 
 // 15b. Print the length of the author the the third book.
 
+  purpleBook.author.length
+
 // 16. To each book object variable, add a key of "dateRead" with a value of the year you read the book.
 // (Go ahead and make this up, too. Get wild.)
+
+  blueBook.dateRead = "January 22 2016";
+  greenBook.dateRead = "April 14 2015";
+  purpleBook.dateRead = "May 27 2010";
 
 // 17. Remove the second book from the books Array.
 
@@ -114,10 +180,22 @@ var invitees = { adults: [{
 // 17. Let's play a game. Create an object (like we did with the bike in class) and assign it at least five properties.
 // The class will guess what your object is based on it's properties.
 
+  var car = {
+      make: "BMW",
+      model: "135i",
+      year: "2008",
+      color: "Black",
+      engine: "inline six",
+  }
+
 // You're a zookeeper and keeping a detailed log of each of the animals in your zoo.
 // 18. Create an empty object called "zoo"
 
+  var zoo = []
+
 // 19. Create assign three animals as your keys in the "zoo" object. The values of the animals should be empty objects.
+
+
 
 // 20. Within each animal empty object, assign a key/value pair of "timeSlept" and a number indicating the hours of sleep each animal got. (Make this up, obvi)
 
